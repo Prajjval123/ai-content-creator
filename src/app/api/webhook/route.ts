@@ -7,7 +7,6 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
   apiVersion: "2024-06-20",
 });
 
-
 export async function POST(req: Request) {
   const body = await req.text();
   const sig = headers().get("stripe-signature");
