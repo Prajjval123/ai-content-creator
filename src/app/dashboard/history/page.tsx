@@ -1,3 +1,4 @@
+import { Auth } from "@/components/auth";
 import {
   Table,
   TableBody,
@@ -23,8 +24,13 @@ const History = async () => {
 
   return (
     <div className="mx-5 py-2">
-      <div className="mt-5 py-6 px-4 bg-white rounded">
+      <div className="mt-5 py-6 px-4 bg-white rounded flex items-center">
         <h2 className="font-medium">Output History</h2>
+        <div className="ml-auto hidden lg:flex gap-4 sm:gap-6">
+          <div className="flex items-center">
+            <Auth />
+          </div>
+        </div>
       </div>
       <div className="mt-5 py-6 px-4 bg-white rounded">
         <Table>

@@ -20,6 +20,7 @@ export const AIUsage = async () => {
     },
   });
 
+
   if (userAIOutputs.length > 0) {
     userAIOutputs.forEach((output) => {
       totalUsage = totalUsage + Number(output.description?.length);

@@ -48,8 +48,8 @@ export const SearchDashboard = ({
           />
         </div>
         <Categories items={categories} />
-        <div className="ml-auto">
-          <Auth />
+        <div className="ml-auto hidden lg:flex gap-4 sm:gap-6">
+          <div className="flex items-center"><Auth /></div>
         </div>
       </div>
     </div>

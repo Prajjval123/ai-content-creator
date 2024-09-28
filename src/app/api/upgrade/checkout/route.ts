@@ -3,7 +3,7 @@ import { db } from "@/lib/db";
 import { auth, currentUser } from "@clerk/nextjs/server";
 import { NextResponse } from "next/server";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+const stripe = new Stripe('sk_test_51Q3Y4tKLpjd6syQ3LKhd0hOQkh66Vpm6krxdKtMClSa9pCDvIxZh2C4r0qxG3UqzOsdoR6pQHxvk3Hdqhwgcj6xO00AwdDb5nV', {
   apiVersion: "2024-06-20",
 });
 
@@ -63,8 +63,8 @@ export async function POST(req: Request) {
       customer: stripeCustomer?.stripeCustomerId,
       line_items,
       mode: "payment",
-      success_url: `http://magic-social.vercel.app/dashboard/`,
-      cancel_url: `http://magic-social.vercel.app/`,
+      success_url: `http://localhost:3000/dashboard/`,
+      cancel_url: `http://localhost:3000/`,
       metadata: {
         userId: userId,
       },
