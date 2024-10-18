@@ -1,6 +1,7 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import { Button } from "./ui/button";
 
+
 export const Auth = () => {
   return (
     <div>

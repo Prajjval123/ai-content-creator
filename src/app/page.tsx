@@ -1,7 +1,5 @@
 import { Auth } from "@/components/auth";
 import { Logo } from "@/components/logo";
-
-import Link from "next/link";
 import { auth } from "@clerk/nextjs/server";
 import { redirect } from "next/navigation";
 
