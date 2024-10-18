@@ -4,7 +4,7 @@ import { AIUsage } from "./_components/ai-usage";
 
 const DashboardLayout = ({
   children,
-}: Readonly<{ children: React.ReactNode }>) => {
+}:Readonly<{ children: React.ReactNode }>) => {
   return (
     <div className="bg-gray-50 h-screen">
       <div className="md:w-64 hidden md:flex flex-col fixed h-full">
